@@ -2,16 +2,52 @@
     height: 70px;
     border-bottom: 1px solid rgb(216, 216, 216);
 }
-.header__container {
+
+.header__form, .header__logo, .header__menu__social {
     height: 100%;
-    display: inline-block;
+    width: 100%;
+    display: flex;
     align-items: center;
 }
-.header__container__seach_form input{
-    border: 1px solid rgb(216, 216, 216);
-    border-radius: 26px;
+
+.header__form  input{
+    border-radius: 50px;
+    border: 1px solid silver;
+    padding-left: 30px;
+}
+.header__form  input:focus{
+    outline: none !important;
+    border-radius: 50px;
+    border: 1px solid rgb(214, 180, 180);
+}
+.header__seach_form{
+    position: relative;
+}
+.header__seach_form span {
+    position: absolute;
+    left: 3%;
+    color: #dfdbdb;
+}
+.header__logo a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+}
+.header__social__links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    padding: 6px;
 }
 
-.header__container__seach_form input:focus{
-    border: 1px !important;
+.header__menu__toogle a {
+    text-decoration: none;
+    color: black;
+}
+
+.header__menu__social {
+    display: flex;
+    justify-content: space-between;
 }
