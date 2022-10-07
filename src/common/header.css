@@ -51,3 +51,14 @@
     display: flex;
     justify-content: space-between;
 }
+
+/* Responsive class */
+@media screen and (max-width:720px) {
+    .header__form{
+        -webkit-order:3;
+        order: 3;
+    }
+    .header__form .header__seach_form,   .header__form input {
+        width: 100%;
+    }
+}
